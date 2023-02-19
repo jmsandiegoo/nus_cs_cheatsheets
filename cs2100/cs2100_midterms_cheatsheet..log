@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  19 FEB 2023 21:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  19 FEB 2023 23:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -539,65 +539,85 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 62.
-Package mdframed Info: Not enough space on this page on input line 63.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106.
+(mdframed)              on input line 67.
+Package mdframed Info: Not enough space on this page on input line 68.
+<./images//mips_execution_instruction.jpg, id=80, 575.90157pt x 261.22594pt>
+File: ./images//mips_execution_instruction.jpg Graphic file (type jpg)
+<use ./images//mips_execution_instruction.jpg>
+Package pdftex.def Info: ./images//mips_execution_instruction.jpg  used on input line 71.
+(pdftex.def)             Requested size: 234.23332pt x 106.24632pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./images//alu_diagram.jpg, id=100, 486.31688pt x 444.15938pt>
-File: ./images//alu_diagram.jpg Graphic file (type jpg)
-<use ./images//alu_diagram.jpg>
-Package pdftex.def Info: ./images//alu_diagram.jpg  used on input line 113.
-(pdftex.def)             Requested size: 234.23332pt x 213.92603pt.
-<./images//alu_generate_table.jpg, id=101, 788.9475pt x 446.41782pt>
-File: ./images//alu_generate_table.jpg Graphic file (type jpg)
-<use ./images//alu_generate_table.jpg>
-Package pdftex.def Info: ./images//alu_generate_table.jpg  used on input line 123.
-(pdftex.def)             Requested size: 234.23332pt x 132.53677pt.
-<./images//alu_control_block.jpg, id=102, 909.3975pt x 556.32843pt>
-File: ./images//alu_control_block.jpg Graphic file (type jpg)
-<use ./images//alu_control_block.jpg>
-Package pdftex.def Info: ./images//alu_control_block.jpg  used on input line 124.
-(pdftex.def)             Requested size: 234.23332pt x 143.29224pt.
-<./images//combinational_circuit.jpg, id=103, 840.89156pt x 489.32813pt>
-File: ./images//combinational_circuit.jpg Graphic file (type jpg)
-<use ./images//combinational_circuit.jpg>
-Package pdftex.def Info: ./images//combinational_circuit.jpg  used on input line 127.
-(pdftex.def)             Requested size: 234.23332pt x 136.3016pt.
+<./images//fetch_stage.jpg, id=81, 415.5525pt x 224.33812pt>
+File: ./images//fetch_stage.jpg Graphic file (type jpg)
+<use ./images//fetch_stage.jpg>
+Package pdftex.def Info: ./images//fetch_stage.jpg  used on input line 80.
+(pdftex.def)             Requested size: 234.23332pt x 126.45003pt.
+<./images//decode_stage.jpg, id=82, 493.845pt x 271.0125pt>
+File: ./images//decode_stage.jpg Graphic file (type jpg)
+<use ./images//decode_stage.jpg>
+Package pdftex.def Info: ./images//decode_stage.jpg  used on input line 90.
+(pdftex.def)             Requested size: 234.23332pt x 128.54204pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//alu_diagram.jpg> <./images//alu_generate_table.jpg> <./images//alu_control_block.jpg> <./images//combinational_circuit.jpg>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 190.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
- [2]
-Overfull \vbox (11.53552pt too high) has occurred while \output is active []
-
- [3] (./cs2100_midterms_cheatsheet..aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//mips_execution_instruction.jpg> <./images//fetch_stage.jpg> <./images//decode_stage.jpg>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 141.
+Package mdframed Info: Not enough space on this page on input line 142.
+<./images//alu_diagram.jpg, id=117, 486.31688pt x 444.15938pt>
+File: ./images//alu_diagram.jpg Graphic file (type jpg)
+<use ./images//alu_diagram.jpg>
+Package pdftex.def Info: ./images//alu_diagram.jpg  used on input line 188.
+(pdftex.def)             Requested size: 234.23332pt x 213.92603pt.
+<./images//alu_generate_table.jpg, id=118, 788.9475pt x 446.41782pt>
+File: ./images//alu_generate_table.jpg Graphic file (type jpg)
+<use ./images//alu_generate_table.jpg>
+Package pdftex.def Info: ./images//alu_generate_table.jpg  used on input line 198.
+(pdftex.def)             Requested size: 234.23332pt x 132.53677pt.
+<./images//alu_control_block.jpg, id=119, 909.3975pt x 556.32843pt>
+File: ./images//alu_control_block.jpg Graphic file (type jpg)
+<use ./images//alu_control_block.jpg>
+Package pdftex.def Info: ./images//alu_control_block.jpg  used on input line 199.
+(pdftex.def)             Requested size: 234.23332pt x 143.29224pt.
+<./images//combinational_circuit.jpg, id=120, 840.89156pt x 489.32813pt>
+File: ./images//combinational_circuit.jpg Graphic file (type jpg)
+<use ./images//combinational_circuit.jpg>
+Package pdftex.def Info: ./images//combinational_circuit.jpg  used on input line 202.
+(pdftex.def)             Requested size: 234.23332pt x 136.3016pt.
+ [2 <./images//alu_diagram.jpg> <./images//alu_generate_table.jpg> <./images//alu_control_block.jpg> <./images//combinational_circuit.jpg>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 228.
+Package mdframed Info: Not enough space on this page on input line 229.
+<./images//complete_datapath_control.jpg, id=130, 1108.14pt x 563.85657pt>
+File: ./images//complete_datapath_control.jpg Graphic file (type jpg)
+<use ./images//complete_datapath_control.jpg>
+Package pdftex.def Info: ./images//complete_datapath_control.jpg  used on input line 230.
+(pdftex.def)             Requested size: 722.7pt x 367.73276pt.
+ [3 <./images//complete_datapath_control.jpg>] [4] (./cs2100_midterms_cheatsheet..aux)
 Package rerunfilecheck Info: File `cs2100_midterms_cheatsheet..out' has not changed.
-(rerunfilecheck)             Checksum: 8A4F3C901015887460AFBED604D2E13A;3179.
+(rerunfilecheck)             Checksum: EAB7F467AD5BE6FE2EA3CF149C051F37;2976.
  ) 
 Here is how much of TeX's memory you used:
- 11659 strings out of 478287
- 185478 string characters out of 5849289
- 560944 words of memory out of 5000000
- 29641 multiletter control sequences out of 15000+600000
- 477275 words of font info for 57 fonts, out of 8000000 for 9000
+ 11690 strings out of 478287
+ 186747 string characters out of 5849289
+ 508947 words of memory out of 5000000
+ 29665 multiletter control sequences out of 15000+600000
+ 476127 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,77p,533b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on cs2100_midterms_cheatsheet..pdf (3 pages, 626765 bytes).
+ 68i,5n,77p,533b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
+Output written on cs2100_midterms_cheatsheet..pdf (4 pages, 873787 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
