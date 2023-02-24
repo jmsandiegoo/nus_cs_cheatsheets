@@ -1,0 +1,351 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CS2100 Midterms Cheatsheet
+% Author: San Diego John Michael Bautista
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,landscape]{article}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{multicol,multirow}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+{ \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+    {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+    {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+}
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+    {-1ex plus -.5ex minus -.2ex}%
+    {0.5ex plus .2ex}%x
+    {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+    {-1explus -.5ex minus -.2ex}%
+    {0.5ex plus .2ex}%
+    {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+    {-1ex plus -.5ex minus -.2ex}%
+    {1ex plus .2ex}%
+    {\normalfont\small\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+% -----------------------------------------------------------------------
+
+\title{CS1231S Midterms CheatSheet}
+
+\begin{document}
+
+\raggedright
+\footnotesize
+
+\begin{center}
+    \Large{\textbf{CS1231S Midterms Cheatsheet}} \\
+    by @jmsandiegoo
+\end{center}
+\begin{multicols}{3}
+    % \setlength{\premulticols}{1pt}
+    % \setlength{\postmulticols}{1pt}
+    % \setlength{\multicolsep}{1pt}
+    \setlength{\columnsep}{2pt}
+
+    % -----------------------------------------------------------------------
+    % Number Systems Lecture 3
+    % -----------------------------------------------------------------------
+
+    \begin{mdframed}
+        \section{3. Number Systems}
+    \end{mdframed}
+
+    \subsection{Data Representation}
+    Data is represented as binary (base 2)
+    \\ Units:
+    \begin{itemize}
+        \item \textbf{Byte:} 8-bits
+        \item \textbf{Nibble:} 4-bits
+        \item \textbf{Word:} 1 / 2 / 4 bits etc. based on architecture
+    \end{itemize}
+    \(N bits = 2^N values\)
+    \\ \(M values = log_2M\) \textit{*take ceiling value}
+    \subsection{Decimal (base 10)}
+    \(Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\)
+    \subsection{Binary (base 2)}
+    \(Symbols = {0, 1}\)
+    \\ \textit{* represented by prefix 0b}
+    \subsection{Octal (base 8)}
+    \(Symbols = {0, 1, 2, 3, 4, 5, 6, 7}\)
+    \\ \textit{* represented by prefix 0}
+    \subsection{Hexadecimal (base 16)}
+    \(Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}\)
+    \\ \textit{* represented by prefix 0x}
+    \subsection{Conversions}
+    \begin{itemize}
+        \item Base-R to Decimal
+              \begin{itemize}
+                  \item multiply each digit with respective positional weight. \((digit \times R^{position}) + ...\)
+              \end{itemize}
+        \item Decimal to Base-R
+              \begin{itemize}
+                  \item \textbf{whole number:} Repeated division by R
+                        \\ \textit{* to find remainder multiply fractional value with the divisor / R}
+
+                  \item \textbf{fractions:} Repeated multiplication by R Method.
+                        \\ \textit{* Until fractional product is 0 or desired number of decimal decimal places}
+              \end{itemize}
+        \item Between Bases
+              \begin{itemize}
+                  \item partition in groups of \(currR^N = convertR\)
+              \end{itemize}
+    \end{itemize}
+
+    \subsection{ASCII}
+    American Standar Code for Information Interchange
+    \\ 7 bits plus 1 bit for odd / even parity (for error checking)
+    \\ Integers (0 - 127) are interchangeable with Characters
+    \subsection{Negative / Signed Numbers}
+
+    \begin{itemize}
+        \item \textbf{Sign-and-Magnitude}
+              \begin{itemize}
+                  \item Sign is represented by the MSB '0' is positive
+                  \item Range for 8-bit: \(-2^{n-1} - 1 = -127_{10} \; to \; 2^{n-1} - 1 = +127_{10}\)
+                  \item Two zeroes: \(00000000 = +0_{10}\) \& \(10000000 = -0_{10}\)
+              \end{itemize}
+        \item \textbf{1s Complement}
+              \begin{itemize}
+                  \item Negated value of x: \(-x = 2^n - x - 1\) / Flip the bits
+                  \item Range for 8-bit: \(-2^{n-1} - 1 = -127_{10} \; to \; 2^{n-1} - 1 = +127_{10}\)
+                  \item Two zeroes: \(00000000 = +0_{10}\) \& \(11111111 = -0_{10}\)
+              \end{itemize}
+        \item \textbf{2s Complement}
+              \begin{itemize}
+                  \item Negated value of x: \(-x = 2^n - x\) / \(1s \; complement + 1\) / Copy from LSB until first '1' then invert rest till MSB
+                  \item Range for 8-bit: \(-2^{n-1} = -128_{10} \; to \; 2^{n-1} - 1 = +127_{10}\)
+                  \item One zero: \(00000000 = +0_{10}\)
+              \end{itemize}
+        \item \textbf{Excess Representation}
+              \begin{itemize}
+                  \item Range of values distributed evenly between positive and negative values
+                  \item Excess-M starts from \(00..00 = -M\) onwards
+                  \item To evenly distribute, use the \(-2^{n-1}\) range as M value
+              \end{itemize}
+    \end{itemize}
+
+    \subsection{Addition / Subtraction 1s \& 2s Complement}
+    \begin{itemize}
+        \item \textbf{1s Complement}
+              \begin{enumerate}
+                  \item Perform binary Addition
+                  \item Carry out add 1 to result
+                  \item Check overflow if MSB result is opposite sign of A \& B
+              \end{enumerate}
+        \item \textbf{2s Complement}
+              \begin{enumerate}
+                  \item Perform binary Addition
+                  \item Ignore carry out of MSB
+                  \item Check overflow 'carry in/out' of MSB different / like in 1s complement
+              \end{enumerate}
+    \end{itemize}
+    \subsection{Fixed-Point Representation}
+    Number of bits allocated for whole and fractional part are fixed
+    For example:
+    If 2s complement is used:
+    \newline \(011010.11_{2s} = 26.75_{10}\)
+    \newline \(111110.11_{2s} = -000001.01_2 = -1.25_{10}\)
+    \newline \textbf{Limitations:} limited range and precision and immutable once implemented
+
+    \subsection{Floating-Point Representation (IEE 754)}
+    Allows to represent very large or small numbers copared to fixed point such as:
+    \newline \(0.23 \times 10^{23}\) (very large positive number)
+    \newline \(0.5 \times 10^{-37}\) (very small positive number)
+    \newline \(-0.2397 \times 10^{-18}\) (very small negative number)
+    \subsubsection{IEE 754 Single precision (32-bits)}
+    Consists of 3 main components:
+    \begin{itemize}
+        \item Sign (1-bit)
+              \begin{itemize}
+                  \item 0/1: Positive / Negative
+              \end{itemize}
+        \item Exponent (8-bit w/ excess-127)
+              \begin{itemize}
+                  \item \(exponent + 127 = 129 = 10000001_2\)
+              \end{itemize}
+        \item Mantissa (fraction) (23-bit)
+              \begin{itemize}
+                  \item nomralised with an implicit leading bit 1
+                  \item \(110.1_2 \rightarrow 1.101_2 \times 2^2\) (101 is stored in mantissa)
+              \end{itemize}
+    \end{itemize}
+    \newpage
+
+    % -----------------------------------------------------------------------
+    % PROCESSOR DATAPATH Lecture 11
+    % -----------------------------------------------------------------------
+
+    \begin{mdframed}
+        \section{11. Processor Datapath}
+    \end{mdframed}
+
+    \subsection{MIPS Instruction Execution}
+
+    \subsection{Fetch Stage}
+    \begin{enumerate}
+        \item Fetch the instruction from memory with \textbf{Program Counter (PC)} \newline \textit{* PC is a special register}
+        \item Increment PC by 4 to get next address
+        \item Output is provided to Decode / Operand Fetch Stage using the Instruction Memory. \textit{* address $\rightarrow$ binary instruction}
+    \end{enumerate}
+    PC is read during first half of clock period and updated at next rising clock edge
+
+    \subsection{Decode / Operand Fetch Stage}
+    Gather data from instruction field:
+    \begin{enumerate}
+        \item Input is the binary instruction from Fetch Stage
+        \item Read opcode to determine instruction format and field lengths
+        \item Fetch data from necessary registers into the Write Register according to RegDst Signal (Rt / Rd)
+        \item Output is the necessary operands to be conducted in ALU Stage
+    \end{enumerate}
+
+    \subsection{Multiplexer}
+    Selects a specific input from multiple input lines. Consists of:
+    \begin{itemize}
+        \item Inputs: n lines of same width (32-bits)
+        \item Control: \(m\) bits where \(n = 2^m\). Specifies which input to choose
+        \item Output: The selected input based on \(i^{th}\) input is \(control = i\)
+    \end{itemize}
+
+    \subsection{ALU Stage / Execution Stage}
+    Performs the following operations:
+    \begin{itemize}
+        \item Arithmetic, Shifting \& Logical
+        \item Memory operation - address calculation
+        \item Branch operaton - register comparison \& target address calculation
+    \end{itemize}
+    \begin{enumerate}
+        \item Input is the two 32-bits numbers from Decode Stage 2nd Operand is chosed according to ALUSrc signal
+        \item With the help of 4-bit ALUControl signal, the respective operation is conducted
+        \item Outputs ALUresult \& a 1-bit signal isZero
+    \end{enumerate}
+    \subsubsection{Branching in ALU}
+    \begin{enumerate}
+        \item Identify the branch outcome through isZero to handle equal / not equal
+        \item Calculate Branch address with PC and Offset (Immediate value)
+        \item Output will be used by PCSrc signal
+    \end{enumerate}
+
+    \subsection{Memory Stage}
+    Mainly for memory read and write instructions \textbf{lw / sw}. Other instructions remains idle in this stage and instead ALU result passed into Register Write Stage
+    \begin{enumerate}
+        \item Input computation result to be used as Memory Address. Also Write Data for sw (Register Data 2)
+        \item Read or write data on the memory address depending on MemRead/Write Signal
+        \item Output memory address content to Register Write stage (lw)
+    \end{enumerate}
+
+    \subsection{Register Write Stage}
+    Routes the correct result into the Write Data in register file. Instructions like stores, branches and jumps remains idle in this stage.
+    \begin{enumerate}
+        \item Input computation result from Memory or ALU, which is specified by MemToReg signal
+        \item Outputs the selected result into the Write Register in the register file
+    \end{enumerate}
+
+    \newpage
+
+    % -----------------------------------------------------------------------
+    % PROCESSOR CONTROL Lecture 12
+    % -----------------------------------------------------------------------
+
+    \begin{mdframed}
+        \section{12. Processor Control}
+    \end{mdframed}
+
+    \subsection{Control Signals}
+    \begin{itemize}
+        \item \textbf{RegDst} - (@Decode/OperandFetch) Selects the destination of WriteRegister in register file
+              \begin{itemize}
+                  \item 0/1: WriteRegister = Ins[20:16] (rt) / Inst[15:11] (rd / immediate)
+              \end{itemize}
+        \item \textbf{RegWrite} - (@Decode/OperandFetch) Indicates if writing on WriteRegister is enabled
+              \begin{itemize}
+                  \item 0/1: No register write / WD write to WR
+              \end{itemize}
+        \item \textbf{ALUSrc} - (@ALU) Determines the 2nd ALU input
+              \begin{itemize}
+                  \item 0/1: Read Data 2 / SignExtend(Inst15:0) (Sign extended Immediate)
+              \end{itemize}
+        \item \textbf{ALUcontrol} - (@ALU) Determines the type of operation to execute
+              \begin{itemize}
+                  \item 0000: AND
+                  \item 0001: OR
+                  \item 0010: add
+                  \item 0110: subtract
+                  \item 0111: slt
+                  \item 1100: NOR
+              \end{itemize}
+        \item \textbf{MemRead} - (@Memory) Indicates if read from memory using Address returned by ALU
+              \begin{itemize}
+                  \item 0/1: No read / Reads memory with Address returned by ALU
+              \end{itemize}
+        \item \textbf{MemWrite} - (@Memory) Indicates if write to memory using RD2 of Register File
+              \begin{itemize}
+                  \item 0/1: No memory write / Writes RD2 into the memory in Address returned by ALU
+              \end{itemize}
+        \item \textbf{MemToReg} - (@RegWrite) Indicates which one to write back into WriteData in register file
+              \begin{itemize}
+                  \item 0/1: WriteData = ALU result / Memory read data
+              \end{itemize}
+        \item \textbf{PCSrc} - (@ALU) Indicates whether to take branch address or not
+              \begin{itemize}
+                  \item 0/1: \(PC = PC\) + 4 / \(PC = SignExt(Inst[15:0]) << 2 + (PC + 4)\)
+                  \item PCSrc = isBranch AND isZero
+              \end{itemize}
+    \end{itemize}
+
+
+    \subsection{ALU}
+    \textit{* Note: operation is determined by the last 2-bits}
+    \textit{* Subtraction has Cin = 1 for bit-0}
+
+    \subsection{Multilevel Decoding}
+    Used to generate the ALUcontrol signal. \textit{(Simpler and more efficient design than Brute Force approach)}
+    \begin{enumerate}
+        \item Generate a 2-bit ALUop signal from opcode
+        \item Use ALUop and Function code (for R-type) to generate 4-bit ALUcontrol signal
+    \end{enumerate}
+
+    \subsection{Control Combinational Circuit}
+
+    \subsection{Instruction Execution}
+    How the implementation of fetch, decode, memory, write, etc. are actually done
+
+    Mainly three things:
+    \begin{enumerate}
+        \item Read contents from register / memory
+        \item Perform some form of computation
+        \item Write results to register / memory
+    \end{enumerate}
+
+    \subsubsection{Single Cycle Execution}
+    All performed within a clock period.\newline
+    \textbf{disadvantage:} all instructions will take the same time as the slowest one.
+    \subsubsection{Multi Cycle Execution}
+    Break up instructions into execution steps (Fetch, Decode, ALU Operation, Mem read/write, Register Write).
+    Each execution is one clock cycle.
+    \textbf{disadvantage:} time taken depends on instructions and may not necessarily be faster.
+\end{multicols}
+\newpage
+
+% -----------------------------------------------------------------------
+% DATAPATH AND CONTROL DIAGRAMS
+% -----------------------------------------------------------------------
+\begin{mdframed}
+    \section{Datapath \& Control Diagrams}
+\end{mdframed}
+\end{document}
