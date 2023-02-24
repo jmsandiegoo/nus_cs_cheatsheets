@@ -614,9 +614,76 @@
     \subsection{Raw Types}
     Using generic types without type arguments will also lead to run-tme errors.
     \begin{mdframed}
-        \section{26 - 27. Wildcards \& Type Inference}
+        \section{26. Wildcards}
     \end{mdframed}
+    \subsection{Upper-Bounded Wildcards}
+    \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
+    // ? can be substituted with S 
+    // or subtype of it
 
+    Array<? extends S>
 
+    // upper-bound is covariant
+    Array<C> <: Array<? extends C>
+
+    C <: S, Array<? extends C> <: Array<? extends S>
+
+    Array<C> <: Array<? extends S> (transitive)
+
+    \end{lstlisting}
+    \subsection{Lower-Bounded Wildcards}
+    \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
+    // ? can be substituted with S 
+    // or supertype of it
+
+    Array<? super S>
+
+    // lower-bound contravariant
+    Array<S> <: Array<? super S>
+    C <: S, Array<? super S> <: Array<? super C>
+    Array<S> <: Array<? super C> (transitive)
+    \end{lstlisting}
+    \subsection{Producer Extends Consumer Super (PECS)}
+    Producer: returns variable of type T $<?\, extends\, T>$
+    Consumer: takes in a variable of type T $<?\, super\, T>$
+    \subsection{Unbounded Wildcards}
+    Supertype of all parameterezied type
+    \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
+    // ? can be substituted with any type
+    // array of objects of some specific, 
+    // but unknown type
+    Array<?>
+
+    // array of object, with
+    // typchecking by the compiler
+    Array<Object>
+
+    // array of Object instances, 
+    // without type checking.
+    Array
+
+    // Can be used with instanceof
+    a instanceof A<?> 
+    // Can be used with array
+    T[] a = (T[]) new Comparable<?>[size]
+
+    \end{lstlisting}
+    \begin{mdframed}
+        \section{27. Type Inference}
+    \end{mdframed}
+    \subsection{Diamond Operator}
+    Java helps infer the parameter types of the generic when instantiating a new instance.
+    \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
+    // inferred the new instance as
+    // type Pair<String, Integer>
+    Pair<String,Integer> p = new Pair<>();
+    \end{lstlisting}
+    \subsection{Target Typing}
+    \begin{enumerate}
+        \item Identify Target Typing
+        \item Identify Argument Typing
+        \item Bounds on Typing
+    \end{enumerate}
+    \textit{* Lowest Bound is taken}
 \end{multicols*}
 \end{document}
