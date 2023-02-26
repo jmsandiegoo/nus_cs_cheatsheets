@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% CS2100 Midterms Cheatsheet
+% CS1231S Midterms Cheatsheet
 % Author: San Diego John Michael Bautista
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -59,16 +59,50 @@
     \setlength{\columnsep}{2pt}
 
     % -----------------------------------------------------------------------
-    % Number Systems Lecture 3
+    % 1. Proofs
     % -----------------------------------------------------------------------
 
     \begin{mdframed}
-        \section{3. Number Systems}
+        \section{1. Proofs}
     \end{mdframed}
 
-    \subsection{Data Representation}
-    Data is represented as binary (base 2)
-    \\ Units:
+    \subsection{Number System Sets}
+    $\mathbb{N}$: Natural numbers $\{0,1,2,...\}$ ($\mathbb{Z}_{\geq 0}$) \\
+    $\mathbb{Z}$: Integers $\{3,-100,3^5,...\}$ \\
+    $\mathbb{Q}$: Rational Numbers $\{\frac{1}{2},-23,8.6,\frac{-37}{5},...\}$\\
+    $\mathbb{R}$: Real Numbers $\{-1,\pi,\sqrt[]{2},4.5,...\}$\\
+    \textit{* 0 is neither negative or positive} \\
+    \textit{* ${\mathbb{Z}^{+/-}}$ set of all positive or negative integers} \\
+    \subsection{Terminologies}
+    \textbf{Axiom/Postulate}: A statement assumed to be true w/o proof. Basic building blocks of theorems \\
+    \textbf{Theorem}: A mathematical statement proved using rigorous mathematical reasoning. Major / important result. \\
+    \textbf{Lemma}: A small theorem minor result to help prove a theorem. \\
+    \textbf{Corollary}: Simple deduction from Theorem. \\
+    \textbf{Conjecture}: A statement believed to be true, but no proof yet.
+
+    \subsection*{Basic Properties of Integers}
+    \textbf{Closure}: Closed under $+ / \times$ \\
+    $x + y \in \mathbb{Z}$ and $xy \in \mathbb{Z}$ \\
+    \textbf{Commutativity}: Commutative under $+ / \times$ \\
+    $x + y = y + x$ and $xy = yx$ \\
+    \textbf{Associativity}: Associative under $+ / \times$ \\
+    $x + y + z = (x + y) + z = x + (y + z)$ and $xyz = (xy)z = x(yz)$ \\
+    \textbf{Distributivity}: \\
+    $x(y+z) = xy + xz$ \\
+    \textbf{Trichotomy}: Exactly one of the following is true \\
+    $x=y$ or $x<y$ or $x>y$
+
+    \subsection*{Definitions of Number}
+    \subsubsection {Even and Odd Integers}
+    Let $n \in \mathbb{Z}$ \\
+    n is even $\leftrightarrow$ $\exists k \in \mathbb{Z}$ $n = 2k$ \\
+    n is odd $\leftrightarrow$ $\exists k \in \mathbb{Z}$ $n = 2k + 1$
+    \subsubsection {Divisibility}
+    Let $d, n \in \mathbb{Z} \; \land d \neq 0$\\
+    $d | n \leftrightarrow \exists k \in \mathbb{Z} \; n = dk$ \\
+    \textit{* d divides n}
+    \subsubsection{Prime / Composite}
+
     \begin{itemize}
         \item \textbf{Byte:} 8-bits
         \item \textbf{Nibble:} 4-bits

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1677204105 "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" "cs1231s_midterms_cheatsheet..pdf" "cs1231s_midterms_cheatsheet." 1677204105
+["pdflatex"] 1677428458 "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" "cs1231s_midterms_cheatsheet..pdf" "cs1231s_midterms_cheatsheet." 1677428458
   "/etc/texmf/web2c/texmf.cnf" 1676620147 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" 1677204104 15162 509a4dd4c01041716fde243d4fce7980 ""
+  "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" 1677428458 16971 62347e33ec76ab2f3a35fdd2d3ce2945 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -37,6 +37,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1248133631 35660 fb24af7afbadb71801619f1415838111 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -111,9 +112,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1676620173 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1676620208 2802181 b5a980c60acdf305ce58c253d15bf8a6 ""
-  "cs1231s_midterms_cheatsheet..aux" 1677204105 4046 9e49ee09c6b198ad12e9017b06f9cbf1 "pdflatex"
-  "cs1231s_midterms_cheatsheet..out" 1677204105 5091 40804bd721418356e4777d4c94fc6846 "pdflatex"
-  "cs1231s_midterms_cheatsheet..tex" 1677204104 15162 509a4dd4c01041716fde243d4fce7980 ""
+  "cs1231s_midterms_cheatsheet..aux" 1677428458 4459 d178e7d6a8bc6ae337049e61c3844145 "pdflatex"
+  "cs1231s_midterms_cheatsheet..out" 1677428458 5602 060b82c51b6f9baa7d25e4ca3c06690e "pdflatex"
+  "cs1231s_midterms_cheatsheet..tex" 1677428458 16971 62347e33ec76ab2f3a35fdd2d3ce2945 ""
   (generated)
   "cs1231s_midterms_cheatsheet..aux"
   "cs1231s_midterms_cheatsheet..log"
