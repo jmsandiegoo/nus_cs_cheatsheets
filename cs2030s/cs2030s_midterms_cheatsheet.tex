@@ -270,7 +270,7 @@
     \\Run-Time Type is the type of the var c during runtime which is ColoredCircle
     \\ \textit{* All classes inherits from Object}
     \subsection{Overriding}
-    Overriding allows child class to change the inherited method behaviour.
+    Overriding allows child class to change the inherited method behaviour. Subclass can override with same method descriptor
     \\ \textbf{Method Signature}: method name and the number, type, and order of its parameters
     \\ \textbf{Method Descriptor}: method signature + return type
     \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
@@ -296,7 +296,7 @@
     \end{mdframed}
     Method overriding and dynaminc typing allows polymorphism to occur.
     An obj can have many forms (takes form of its many subtypes) in which
-    its method is invoked depending run-time type.
+    its method is invoked depending run-time type (dynamic binding only works for non static methods).
     \begin{lstlisting}[showstringspaces=false, language=Java, xleftmargin=-.3in]
     // version 0.1 (with polymorphism)
     boolean contains(Object[] array, Object obj) {
@@ -393,6 +393,7 @@
     // with auto-boxing/unboxing
     Integer i = 4;
     int j = i;
+    // can also unbox and widen to other primitive
     \end{lstlisting}
     \textit{* less performant terms of heap space and immutability as a result of auto-box}
 
@@ -464,7 +465,7 @@
     // just throws keyword after function params
     \end{lstlisting}
     \subsection{Checked vs Unchecked}
-    \textbf{Checked}: an exception that a programmer has no control over with despite
+    \textbf{Checked $<:$ Exception}: an exception that a programmer has no control over with despite
     no error in code. MUST BE CHECKED AND HANDLED if not won't compile.
     \\\textbf{Unchecked $<:$ RuntimeException}: exception caused my programmer's mistake in the code. NOT EXPLICITLY
     CAUGHT / THROWN. Leads to runtime errors
