@@ -78,7 +78,7 @@
     \textbf{Theorem}: A mathematical statement proved using rigorous mathematical reasoning. Major / important result. \\
     \textbf{Lemma}: A small theorem minor result to help prove a theorem. \\
     \textbf{Corollary}: Simple deduction from Theorem. \\
-    \textbf{Conjecture}: A statement believed to be true, but no proof yet.
+    \textbf{Conjecture}: A statement believed to be true, but no proof yet. \\
 
     \subsection*{Basic Properties of Integers}
     \textbf{Closure}: Closed under $+ / \times$ \\
@@ -102,7 +102,142 @@
     $d | n \leftrightarrow \exists k \in \mathbb{Z} \; n = dk$ \\
     \textit{* d divides n}
     \subsubsection{Prime / Composite}
-
+    
+    \subsubsection{Rationality / Lowest Term Fraction}
+    $r$ is rational $\leftrightarrow$ $\exists a, b \in \mathbb{Z}\; r=\frac{a}{b} \land b \neq 0$ \\
+    \textit{* it is lowest term fraction if largest integer that divides $a \land b$ in $\frac{a}{b}$ is 1 (prime numbers)}
+    \subsection{Methods of Proof}
+    \begin{enumerate}
+        \item \textbf{Proof by Construction}: usually proves an existential statement by explicitly finding / constructing a value that satisfies the properties stated.
+        \item \textbf{Proof by Counter Example}: Finding a specific example that shows statement is not always true.
+        \item \textbf{Proof by Exhaustion}: Prove by showing each cases is true. Suitable for finite cases.
+        \item \textbf{Proof by Deduction}: Form of direct proof usually makes use of definitions. Good for universal statements and infinite cases.
+        \item \textbf{Proof by Contradiction}: Negating the original statement and trying to arrive at a contradiction making the negation to be false.
+    \end{enumerate}
+    \begin{mdframed}
+        \section{2. Compound Statements}
+    \end{mdframed}
+    \textbf{Definition 2.1.1 (Statement)} \\
+    A statement / proposition is a sentence that is true or false, but not both \\
+    \textbf{Definition 2.1.2 (Negation)} \\
+    If p is a statement variable, negation is "not p $(\sim p)$"
+    \textbf{Definition 2.1.3 (Conjunction)} \\
+    "p and q ($p \land q$)" \\
+    \textbf{Definition 2.1.4 (Disjunction)} \\
+    "p or q ($p \lor q$)" \\
+    \textit{* $\sim$ performed first, then $\land$, $\lor$ coequal in order of operation} \\
+    \textbf{Definition 2.1.5 (Statement / Propositional Form)}
+    A statement / propositional form is an expression of statement variables and logical connectives that becomes a statement when actual statements are substituted \\
+    \textbf{Definition 2.1.6 (Logical Equivalence}) \\
+    $P \equiv Q \leftrightarrow$ both have identical truth values \\
+    \textit{* Use truth table / counter example to prove non-equivalence} \\
+    \textbf{Definition 2.1.7 (Tautology)} \\
+    Statement that is always true (tautological statement) \\
+    \textbf{Definition 2.1.8 (Contradiction)} \\
+    Statement that is always false (contradictory statement) \\
+    \subsection{Conditional Statements}
+    \textbf{Definition 2.2.1 (Conditional)} \\
+    "if p then q" or "p implies q" \\
+    $p\;(hypo / antedecent) \rightarrow q\;(conclusion / consequent)$ \\
+    \textit{* only false when p is true and q is false} \\
+    \textit{* performed last with $\sim, \land, \lor$} \\
+    \textbf{Vacuously true}: hypothesis is false \\
+    \textbf{Implication}: $\sim p \lor q$ \\
+    \textbf{Negation}: $p\; \land \sim q$ \\
+    \textbf{Definition 2.2.2 (Contrapositive)} \\
+    "$p \rightarrow q \equiv \sim q \rightarrow \; \sim p$" \\
+    \textbf{Definition 2.2.3 (Converse)} \\
+    "$q \rightarrow p$" \\
+    \textbf{Definition 2.2.4 (Inverse)} \\
+    "$\sim p \rightarrow \; \sim q"$ \\
+    \textit{* Inverse $\equiv$ Converse} \\
+    \textbf{Definition 2.2.5 (Only If)} \\
+    p can only take place only if q takes place. "$\sim q \rightarrow \; \sim p$"
+    \textbf{Definition 2.2.6 (Biconditional $\leftrightarrow$ )} \\
+    "$p \leftrightarrow q$" implication but both ways. True when p and q has same value false otherwise. \\
+    \textit{* Proving it needs to show both direction (Proof by cases $\rightarrow$ and $\leftarrow$)} \\
+    \textit{* Coequal with Conditional operator} \\
+    \textbf{Definition 2.2.7 (Necessary / Sufficient)} \\
+    "$p \rightarrow q$" means p is sufficient to guarantee occurrence of q. 
+    "$\sim p \rightarrow \sim q$" means if p does not occur, q does not either. Necessary for p to occur when q occurs \\
+    \subsection{Arguments}
+    \textbf{Definition 2.3.1 (Argument)} \\
+    \begin{align}
+        p \rightarrow q \tag{premise} \\
+        p \tag{premise} \\
+        \bullet \hspace{0.3cm} q \tag{conclusion}
+    \end{align}
+    \textbf{Valid}: All premises (critical rows) and conclusion are true.
+    \textbf{Syllogism}: Argument form consisting of two premises and a conclusion.
+    \subsection{Rules of inference}
+    \textbf{Modus Ponens} \\
+    \begin{align}
+        p \rightarrow q \tag{premise} \\
+        p \tag{premise} \\
+        \bullet \hspace{0.3cm} q \tag{conclusion}
+    \end{align}
+    \textbf{Modus Tollens} \\
+    \begin{align}
+        p \rightarrow q \tag{premise} \\
+        \sim q \tag{premise} \\
+        \bullet \hspace{0.3cm} \sim p \tag{conclusion}
+    \end{align}
+    \textbf{Generalization} \\
+    \begin{align}
+        p \tag{premise} \\
+        \bullet \hspace{0.3cm} p \lor q \tag{conclusion}
+    \end{align}
+    \textbf{Specialization} \\
+    \begin{align}
+        p \land q \tag{premise} \\
+        \bullet \hspace{0.3cm} p \tag{conclusion}
+    \end{align}
+    \textbf{Elimination} \\
+    \begin{align}
+        p \lor q \tag{premise} \\
+        \sim q \tag{premise} \\
+        \bullet \hspace{0.3cm} p \tag{conclusion}
+    \end{align}
+    \textbf{Transitivity} \\
+    \begin{align}
+        p \rightarrow q \tag{premise} \\
+        q \rightarrow r \tag{premise} \\
+        \bullet \hspace{0.3cm} p \rightarrow r \tag{conclusion}
+    \end{align}
+        \textbf{Div into Cases} \\
+    \begin{align}
+        p \lor q \tag{premise} \\
+        p \rightarrow r \tag{premise} \\
+        q \rightarrow r \tag{premise} \\
+        \bullet \hspace{0.3cm} r \tag{conclusion}
+    \end{align}
+    \subsection{Fallacies}
+    \begin{enumerate}
+        \item Converse
+        \item Inverse
+        \item False Premise
+    \end{enumerate}
+    \textbf{Definition 2.3.2 (Sound / Unsound Arguments)} \\
+    Sound $\leftrightarrow$ if it is valid and premises are true \\
+    Unsound $\leftrightarrow$ $\sim$ Sound
+    
+    \begin{mdframed}
+        \section{3. Quantified Statements}
+    \end{mdframed}
+    
+    
+    \newpage
+    \begin{mdframed}
+        \section{Proven, Theorems etc.}
+    \end{mdframed}
+    \subsection{Numbers}
+    Product of two consecutive odd numbers is always odd \\
+    The product of two irrational numbers is not always irrational \\
+    Difference of two consecutive sqaures is always odd \\
+    Theorem 4.7.1: $\sqrt{2}$ is irrational\\
+    Proposition 4.6.4: For all integers $n$, if $n^2$ is even then $n$ is even \\
+    
+    
     \begin{itemize}
         \item \textbf{Byte:} 8-bits
         \item \textbf{Nibble:} 4-bits
