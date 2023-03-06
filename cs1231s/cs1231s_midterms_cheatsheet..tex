@@ -227,6 +227,28 @@
     Unsound $\leftrightarrow$ $\sim$ Sound
 
     \begin{mdframed}
+        \section{3. Quantified Statement}
+    \end{mdframed}
+    \textbf{Definition 3.1.1 (Predicate)}: is a sentence that contains a finite number of variables that becomes a statement when values are substituted \\
+    \textbf{Definition 3.1.2 (Truth Set)}: set of all elements in Domain of P(x) such that P(x) is true \\
+    \textbf{Definition 3.1.3 (Universal Statement $\forall$)}: "$\forall x \in D, Q(x)$" \\
+    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for every x in D} \\
+    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for at least one x in D (counter-example)} \\
+    \textbf{Definition 3.1.4 (Existential Statement $\exists$)}: "$\exists x \in D, Q(x)$" \\
+    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for at least one x in D} \\
+    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for all x in D (counter-example)} \\
+    \textit{* $\exists!$: there exists a unique / one and only one} \\
+    \textbf{Theorem 3.2.1 Negation of a Universal Statement}: "$\sim (\forall x \in D, P(x)) \equiv \exists x \in D, \sim P(x)$" \\
+    \textbf{Theorem 3.2.2 Negation of a Existential Statement}: "$\sim (\exists x \in D, P(x)) \equiv \forall x \in D, \sim P(x) $" \\
+    \textbf{Definition 3.2.1 (Contrapositive, converse, inverse)}: \\
+    Given "$\forall x \in D (P(x) \rightarrow Q(x))$"
+    \begin{enumerate}
+        \item Contrapositive: "$\forall x \in D (\sim Q(x) \rightarrow \sim P(x))$"
+        \item Converse: "$\forall x \in D (Q(x) \rightarrow P(x))$"
+        \item Inverse: "$\forall x \in D (\sim P(x) \rightarrow \sim Q(x))$"
+    \end{enumerate}
+
+    \begin{mdframed}
         \section{5. Set Theory}
     \end{mdframed}
     \subsection{Set notations:}
@@ -262,29 +284,7 @@
     \textbf{Definition 5.1.8 (Partition of Sets)} \\
     For all $i, j, ... = 1, 2, 3$ \\
     $A_i \cap A_j = \emptyset | i \neq j$ \\
-    
-    
-    \begin{mdframed}
-        \section{6. Relations}
-    \end{mdframed}
-    \textbf{Definition 3.1.1 (Predicate)}: is a sentence that contains a finite number of variables that becomes a statement when values are substituted \\
-    \textbf{Definition 3.1.2 (Truth Set)}: set of all elements in Domain of P(x) such that P(x) is true \\
-    \textbf{Definition 3.1.3 (Universal Statement $\forall$)}: "$\forall x \in D, Q(x)$" \\
-    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for every x in D} \\
-    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for at least one x in D (counter-example)} \\
-    \textbf{Definition 3.1.4 (Existential Statement $\exists$)}: "$\exists x \in D, Q(x)$" \\
-    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for at least one x in D} \\
-    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for all x in D (counter-example)} \\
-    \textit{* $\exists!$: there exists a unique / one and only one} \\
-    \textbf{Theorem 3.2.1 Negation of a Universal Statement}: "$\sim (\forall x \in D, P(x)) \equiv \exists x \in D, \sim P(x)$" \\
-    \textbf{Theorem 3.2.2 Negation of a Existential Statement}: "$\sim (\exists x \in D, P(x)) \equiv \forall x \in D, \sim P(x) $" \\
-    \textbf{Definition 3.2.1 (Contrapositive, converse, inverse)}: \\
-    Given "$\forall x \in D (P(x) \rightarrow Q(x))$"
-    \begin{enumerate}
-        \item Contrapositive: "$\forall x \in D (\sim Q(x) \rightarrow \sim P(x))$"
-        \item Converse: "$\forall x \in D (Q(x) \rightarrow P(x))$"
-        \item Invsrse: "$\forall x \in D (\sim P(x) \rightarrow \sim Q(x))$"
-    \end{enumerate}
+
 
     \newpage
     \begin{mdframed}

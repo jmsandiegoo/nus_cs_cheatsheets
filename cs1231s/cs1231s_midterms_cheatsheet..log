@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  5 MAR 2023 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  7 MAR 2023 00:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -558,43 +558,46 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 230.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 252.
  [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 253.
-Package mdframed Info: Not enough space on this page on input line 254.
+(mdframed)              on input line 291.
+Package mdframed Info: Not enough space on this page on input line 292.
  [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 387.
-Package mdframed Info: Not enough space on this page on input line 388.
+(mdframed)              on input line 425.
+Package mdframed Info: Not enough space on this page on input line 426.
  [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 458.
-Package mdframed Info: Not enough space on this page on input line 459.
+(mdframed)              on input line 496.
+Package mdframed Info: Not enough space on this page on input line 497.
  [5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 541.
-Package mdframed Info: Not enough space on this page on input line 542.
+(mdframed)              on input line 579.
+Package mdframed Info: Not enough space on this page on input line 580.
  [6] (./cs1231s_midterms_cheatsheet..aux)
 Package rerunfilecheck Info: File `cs1231s_midterms_cheatsheet..out' has not changed.
-(rerunfilecheck)             Checksum: D3760DFF4DC1C6D82341AF371DE22481;7214.
+(rerunfilecheck)             Checksum: 384E2410B1D8DEB1EE770132DF1532F2;7457.
  ) 
 Here is how much of TeX's memory you used:
- 11682 strings out of 478287
- 184364 string characters out of 5849289
- 537968 words of memory out of 5000000
- 29588 multiletter control sequences out of 15000+600000
+ 11686 strings out of 478287
+ 184414 string characters out of 5849289
+ 537971 words of memory out of 5000000
+ 29590 multiletter control sequences out of 15000+600000
  476127 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,8n,77p,535b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on cs1231s_midterms_cheatsheet..pdf (6 pages, 215378 bytes).
+Output written on cs1231s_midterms_cheatsheet..pdf (6 pages, 220168 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 120 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
