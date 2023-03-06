@@ -191,6 +191,50 @@
     \newpage
 
     % -----------------------------------------------------------------------
+    % Instruction Encoding 9
+    % -----------------------------------------------------------------------
+
+    \begin{mdframed}
+        \section{9. MIPS Instruction Encoding}
+    \end{mdframed}
+    % \includegraphics[width=\linewidth]{register_table_1}
+    % \includegraphics[width=\linewidth]{register_table_2}
+    \subsection{R-Format}
+    \includegraphics[width=\linewidth]{r_format}
+    \begin{itemize}
+        \item Opcode $000000$ for R-Format
+        \item Each field is unsigned integer
+        \item $\$arith$: shamt is always 0, $\$shift$: rs is always 0
+    \end{itemize}
+    \textit{* add, sub, and, or, nor, slt, srl, sll, etc.}
+
+    \subsection{I-Format}
+    \includegraphics[width=\linewidth]{i_format}
+    \begin{itemize}
+        \item Opcode is not $000000$ for I-Format
+        \item Immediate is a signed integer except bitwise operations (andi, ori, xori)
+    \end{itemize}
+    \textit{* addi, andi, ori, slti, lw, sw, beq, bne, etc.}
+    \subsection{PC-Relative Addressing}
+    \textbf{Program Counter}: special register that keeps address of the current / next instruction (but think of it as PC + 4) \\
+    \textbf{Relative target address (imm)}: $\pm 2^{15} words = \pm 2^{17} bytes$ from the PC \\
+    \textit{* due to word aligned instructions and immediate is auto multiplied by 4} \\
+    \textbf{Branch Calculation}:
+    \begin{itemize}
+        \item \textbf{Branch Taken}: $PC = (PC + 4) + (immediate + 4)$
+        \item \textbf{Branch Not Taken}: $PC = (PC + 4)$
+    \end{itemize}
+    \subsection{J-Format}
+    \includegraphics[width=\linewidth]{j_format}
+    \begin{itemize}
+        \item Jump anywhere in the memory
+        \item MIPS will take the 4 MSBs from PC + 4 and make add it infront of the target address
+        \item 2 LSBs removed as it is always 00 due to word alignment
+        \item \textbf{Target address}: 28 bits
+    \end{itemize}
+    \newpage
+
+    % -----------------------------------------------------------------------
     % PROCESSOR DATAPATH Lecture 11
     % -----------------------------------------------------------------------
 

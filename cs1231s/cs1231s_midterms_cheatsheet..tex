@@ -81,7 +81,7 @@
     \textbf{Conjecture}: A statement believed to be true, but no proof yet. \\
 
     \subsection*{Basic Properties of Integers}
-    \textbf{Closure}: Closed under $+ / \times$ \\
+    \textbf{Closure}: Closed under $+ / \times / -$\\
     $x + y \in \mathbb{Z}$ and $xy \in \mathbb{Z}$ \\
     \textbf{Commutativity}: Commutative under $+ / \times$ \\
     $x + y = y + x$ and $xy = yx$ \\
@@ -102,7 +102,7 @@
     $d | n \leftrightarrow \exists k \in \mathbb{Z} \; n = dk$ \\
     \textit{* d divides n}
     \subsubsection{Prime / Composite}
-    
+
     \subsubsection{Rationality / Lowest Term Fraction}
     $r$ is rational $\leftrightarrow$ $\exists a, b \in \mathbb{Z}\; r=\frac{a}{b} \land b \neq 0$ \\
     \textit{* it is lowest term fraction if largest integer that divides $a \land b$ in $\frac{a}{b}$ is 1 (prime numbers)}
@@ -158,13 +158,13 @@
     \textit{* Proving it needs to show both direction (Proof by cases $\rightarrow$ and $\leftarrow$)} \\
     \textit{* Coequal with Conditional operator} \\
     \textbf{Definition 2.2.7 (Necessary / Sufficient)} \\
-    "$p \rightarrow q$" means p is sufficient to guarantee occurrence of q. 
+    "$p \rightarrow q$" means p is sufficient to guarantee occurrence of q.
     "$\sim p \rightarrow \sim q$" means if p does not occur, q does not either. Necessary for p to occur when q occurs \\
     \subsection{Arguments}
     \textbf{Definition 2.3.1 (Argument)} \\
     \begin{align}
         p \rightarrow q \tag{premise} \\
-        p \tag{premise} \\
+        p \tag{premise}               \\
         \bullet \hspace{0.3cm} q \tag{conclusion}
     \end{align}
     \textbf{Valid}: All premises (critical rows) and conclusion are true.
@@ -173,13 +173,13 @@
     \textbf{Modus Ponens} \\
     \begin{align}
         p \rightarrow q \tag{premise} \\
-        p \tag{premise} \\
+        p \tag{premise}               \\
         \bullet \hspace{0.3cm} q \tag{conclusion}
     \end{align}
     \textbf{Modus Tollens} \\
     \begin{align}
         p \rightarrow q \tag{premise} \\
-        \sim q \tag{premise} \\
+        \sim q \tag{premise}          \\
         \bullet \hspace{0.3cm} \sim p \tag{conclusion}
     \end{align}
     \textbf{Generalization} \\
@@ -195,7 +195,7 @@
     \textbf{Elimination} \\
     \begin{align}
         p \lor q \tag{premise} \\
-        \sim q \tag{premise} \\
+        \sim q \tag{premise}   \\
         \bullet \hspace{0.3cm} p \tag{conclusion}
     \end{align}
     \textbf{Transitivity} \\
@@ -204,12 +204,17 @@
         q \rightarrow r \tag{premise} \\
         \bullet \hspace{0.3cm} p \rightarrow r \tag{conclusion}
     \end{align}
-        \textbf{Div into Cases} \\
+    \textbf{Div into Cases} \\
     \begin{align}
-        p \lor q \tag{premise} \\
+        p \lor q \tag{premise}        \\
         p \rightarrow r \tag{premise} \\
         q \rightarrow r \tag{premise} \\
         \bullet \hspace{0.3cm} r \tag{conclusion}
+    \end{align}
+    \textbf{Contradiction} \\
+    \begin{align}
+        \sim p \rightarrow false \tag{premise} \\
+        \bullet \hspace{0.3cm} p \tag{conclusion}
     \end{align}
     \subsection{Fallacies}
     \begin{enumerate}
@@ -220,12 +225,29 @@
     \textbf{Definition 2.3.2 (Sound / Unsound Arguments)} \\
     Sound $\leftrightarrow$ if it is valid and premises are true \\
     Unsound $\leftrightarrow$ $\sim$ Sound
-    
+
     \begin{mdframed}
         \section{3. Quantified Statements}
     \end{mdframed}
-    
-    
+    \textbf{Definition 3.1.1 (Predicate)}: is a sentence that contains a finite number of variables that becomes a statement when values are substituted \\
+    \textbf{Definition 3.1.2 (Truth Set)}: set of all elements in Domain of P(x) such that P(x) is true \\
+    \textbf{Definition 3.1.3 (Universal Statement $\forall$)}: "$\forall x \in D, Q(x)$" \\
+    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for every x in D} \\
+    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for at least one x in D (counter-example)} \\
+    \textbf{Definition 3.1.4 (Existential Statement $\exists$)}: "$\exists x \in D, Q(x)$" \\
+    \textit{* true $\leftrightarrow$ Q(x) $\equiv$ True for at least one x in D} \\
+    \textit{* false $\leftrightarrow$ Q(x) $\equiv$ False for all x in D (counter-example)} \\
+    \textit{* $\exists!$: there exists a unique / one and only one} \\
+    \textbf{Theorem 3.2.1 Negation of a Universal Statement}: "$\sim (\forall x \in D, P(x)) \equiv \exists x \in D, \sim P(x)$" \\
+    \textbf{Theorem 3.2.2 Negation of a Existential Statement}: "$\sim (\exists x \in D, P(x)) \equiv \forall x \in D, \sim P(x) $" \\
+    \textbf{Definition 3.2.1 (Contrapositive, converse, inverse)}: \\
+    Given "$\forall x \in D (P(x) \rightarrow Q(x))$"
+    \begin{enumerate}
+        \item Contrapositive: "$\forall x \in D (\sim Q(x) \rightarrow \sim P(x))$"
+        \item Converse: "$\forall x \in D (Q(x) \rightarrow P(x))$"
+        \item Invsrse: "$\forall x \in D (\sim P(x) \rightarrow \sim Q(x))$"
+    \end{enumerate}
+
     \newpage
     \begin{mdframed}
         \section{Proven, Theorems etc.}
@@ -236,8 +258,9 @@
     Difference of two consecutive sqaures is always odd \\
     Theorem 4.7.1: $\sqrt{2}$ is irrational\\
     Proposition 4.6.4: For all integers $n$, if $n^2$ is even then $n$ is even \\
-    
-    
+    \subsection{Quantifiers}
+    Theorem 3.2.1 Negation of Universal Statement
+
     \begin{itemize}
         \item \textbf{Byte:} 8-bits
         \item \textbf{Nibble:} 4-bits
