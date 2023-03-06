@@ -222,7 +222,45 @@
     Unsound $\leftrightarrow$ $\sim$ Sound
     
     \begin{mdframed}
-        \section{3. Quantified Statements}
+        \section{5. Set Theory}
+    \end{mdframed}
+    \subsection{Set notations:}
+    \begin{itemize}
+        \item \textbf{Set-Roster Notation}: $\{ 1, 2, 3, ...\}$
+        \item \textbf{Set-Builder Notation}: $\{ x \in U : P(x) \}$
+        \item \textbf{Replacement Notation}: $\{ t(x) : x \in U \}$
+    \end{itemize}
+    \textit{* $:$ or $|$} \\
+    \textit{* Order and duplicates do not matter} \\
+    \textbf{Definitions 5.1.2} \\
+    \textbf{Subset $\subseteq$}: $A \subseteq B \leftrightarrow \forall x (x \in A \rightarrow x \in B)$ \\
+    \textbf{Proper Subset $\subsetneq $}: $A \subsetneq B \leftrightarrow A \subseteq B \land A \neq B$ \\
+    \textbf{Not a subset $ \not\subset$}: $A \not\subset B \leftrightarrow \exists x (x \in A \land x \not\in B)$ \\
+    \textbf{Theorem 6.2.4 (Empty set subset of every set)} \\
+    $\emptyset \subseteq A$ (A is any set) \\
+    \textbf{Definition 5.1.3 (Ordered Pair)} \\
+    Form of $(x, y)$. Equality: $(a, b) = (c, d) \leftrightarrow (a = c) \land (b = d)$ \\
+    \textbf{Definition 5.1.4 (Cartesian Product)} \\
+    $A \times B = \{(a, b) : a \in A \land b \in B\}$ \\
+    \textbf{Definition 5.1.5 (Set Equality)} \\
+    $A = B \leftrightarrow A \subseteq B \land B \subseteq A$ \\
+    $A = B \leftrightarrow \forall x (x \in A \leftrightarrow x \in B)$ \\
+    \textit{* provide A $\subseteq$ B then prove B $\subseteq$ A} \\
+    \textbf{Union $\cup$} \\
+    $A \cup B = \{ x \in U : x \in A \lor x \in B \}$ \\
+    \textbf{Intersection $\cap$} \\
+    $A \cap B = \{ x \in U : x \in A \land x \in B \}$ \\
+    \textbf{Difference / Relative Complement $- \setminus$} \\
+    $B \setminus A = \{ x \in U : x \in B \land x \notin A \}$ \\
+    \textbf{Complement $\bar{A}$} \\
+    $\bar{A} = \{ x \in U : x \notin A \}$ \\
+    \textbf{Definition 5.1.8 (Partition of Sets)} \\
+    For all $i, j, ... = 1, 2, 3$ \\
+    $A_i \cap A_j = \emptyset | i \neq j$ \\
+    
+    
+    \begin{mdframed}
+        \section{6. Relations}
     \end{mdframed}
     
     
@@ -233,7 +271,7 @@
     \subsection{Numbers}
     Product of two consecutive odd numbers is always odd \\
     The product of two irrational numbers is not always irrational \\
-    Difference of two consecutive sqaures is always odd \\
+    Difference of two consecutive squares is always odd \\
     Theorem 4.7.1: $\sqrt{2}$ is irrational\\
     Proposition 4.6.4: For all integers $n$, if $n^2$ is even then $n$ is even \\
     
