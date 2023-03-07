@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  7 MAR 2023 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.17)  7 MAR 2023 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,65 +555,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 123.
+(mdframed)              on input line 127.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 235.
+(mdframed)              on input line 239.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 257.
+(mdframed)              on input line 261.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 313.
-LaTeX Font Info:    Trying to load font information for U+eus on input line 348.
+(mdframed)              on input line 317.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 352.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) [2]
-<./images//hasse_diagram.jpg, id=291, 599.99156pt x 189.70876pt>
+<./images//hasse_diagram.jpg, id=171, 599.99156pt x 189.70876pt>
 File: ./images//hasse_diagram.jpg Graphic file (type jpg)
 <use ./images//hasse_diagram.jpg>
-Package pdftex.def Info: ./images//hasse_diagram.jpg  used on input line 388.
+Package pdftex.def Info: ./images//hasse_diagram.jpg  used on input line 392.
 (pdftex.def)             Requested size: 234.23332pt x 74.06137pt.
  [3 <./images//hasse_diagram.jpg>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 422.
-Package mdframed Info: Not enough space on this page on input line 423.
- [4] [5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 582.
-Package mdframed Info: Not enough space on this page on input line 583.
- [6]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 653.
-Package mdframed Info: Not enough space on this page on input line 654.
- [7]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 736.
-Package mdframed Info: Not enough space on this page on input line 737.
- [8] (./cs1231s_midterms_cheatsheet..aux)
+(mdframed)              on input line 429.
+Package mdframed Info: Not enough space on this page on input line 430.
+ [4] (./cs1231s_midterms_cheatsheet..aux)
 Package rerunfilecheck Info: File `cs1231s_midterms_cheatsheet..out' has not changed.
-(rerunfilecheck)             Checksum: 9CA2141471BDFC25607387C567590085;8230.
+(rerunfilecheck)             Checksum: 2F450BB98A382E033FD3CDB75B5D2941;3393.
  ) 
 Here is how much of TeX's memory you used:
- 11786 strings out of 478287
- 186125 string characters out of 5849289
- 537094 words of memory out of 5000000
- 29644 multiletter control sequences out of 15000+600000
+ 11697 strings out of 478287
+ 185202 string characters out of 5849289
+ 535159 words of memory out of 5000000
+ 29615 multiletter control sequences out of 15000+600000
  476727 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,77p,535b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,8n,77p,535b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on cs1231s_midterms_cheatsheet..pdf (8 pages, 256666 bytes).
+Output written on cs1231s_midterms_cheatsheet..pdf (4 pages, 231973 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 418 compressed objects within 5 object streams
- 155 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
