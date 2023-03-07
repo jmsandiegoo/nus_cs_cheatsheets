@@ -5,6 +5,7 @@
 
 \documentclass[10pt,landscape]{article}
 \usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage[mathscr]{euscript}
 \usepackage{multicol,multirow}
 \usepackage{calc}
 \usepackage{ifthen}
@@ -96,12 +97,16 @@
     \subsubsection {Even and Odd Integers}
     Let $n \in \mathbb{Z}$ \\
     n is even $\leftrightarrow$ $\exists k \in \mathbb{Z}$ $n = 2k$ \\
-    n is odd $\leftrightarrow$ $\exists k \in \mathbb{Z}$ $n = 2k + 1$
+    n is odd $\leftrightarrow$ $\exists k \in \mathbb{Z}$ $n = 2k + 1$s
     \subsubsection {Divisibility}
     Let $d, n \in \mathbb{Z} \; \land d \neq 0$\\
     $d | n \leftrightarrow \exists k \in \mathbb{Z} \; n = dk$ \\
     \textit{* d divides n}
     \subsubsection{Prime / Composite}
+    \subsubsection{Congruence}
+    Let $a, b \in \mathbb{Z}$ and $n \in \mathbb{Z}^+$:\\
+    $a \equiv b (mod n) \leftrightarrow n | (a-b)$ \\
+    \textit{* forms equivalence relation}
 
     \subsubsection{Rationality / Lowest Term Fraction}
     $r$ is rational $\leftrightarrow$ $\exists a, b \in \mathbb{Z}\; r=\frac{a}{b} \land b \neq 0$ \\
@@ -259,12 +264,13 @@
     \end{itemize}
     \textit{* $:$ or $|$} \\
     \textit{* Order and duplicates do not matter} \\
-    \textbf{Definitions 5.1.2} \\
+    \textbf{Definitions 5.1.2 (Subset, Proper Susbset Empty Set, Singleton):} \\
     \textbf{Subset $\subseteq$}: $A \subseteq B \leftrightarrow \forall x (x \in A \rightarrow x \in B)$ \\
     \textbf{Proper Subset $\subsetneq $}: $A \subsetneq B \leftrightarrow A \subseteq B \land A \neq B$ \\
-    \textbf{Not a subset $ \not\subset$}: $A \not\subset B \leftrightarrow \exists x (x \in A \land x \not\in B)$ \\
+    \textbf{Not a subset $ \not\subseteq$}: $A \not\subset B \leftrightarrow \exists x (x \in A \land x \not\in B)$ \\
     \textbf{Theorem 6.2.4 (Empty set subset of every set)} \\
     $\emptyset \subseteq A$ (A is any set) \\
+    \textbf{Singleton:} a set with single element \\
     \textbf{Definition 5.1.3 (Ordered Pair)} \\
     Form of $(x, y)$. Equality: $(a, b) = (c, d) \leftrightarrow (a = c) \land (b = d)$ \\
     \textbf{Definition 5.1.4 (Cartesian Product)} \\
@@ -284,8 +290,133 @@
     \textbf{Definition 5.1.8 (Partition of Sets)} \\
     For all $i, j, ... = 1, 2, 3$ \\
     $A_i \cap A_j = \emptyset | i \neq j$ \\
+    \textbf{Theorem 4.4.1 (The Quotient-Remainder Theorem)} \\
+    For any integer n and positive integer d, there is a unique q and r such that:\\
+    $n = dq + r \; | \; (0 \leq r < d)$ \\
+    \textbf{Definition 5.1.9 (Power Set):} \\
+    Given $A = \{ x, y \}$,
+    $\mathcal{P}(A)$ is the set of all subsets of A \\
+    $\mathcal{P}(A) = \{ \emptyset, \{ x \}, \{ y \}, \{ x, y \} \}$ \\
+    \textit{* $2^n$ elements for power set} \\
+    \textbf{Theorem 6.3.1 (Power Set No. of Elements)} \\
+    $|\mathcal{P}(A)| = 2^{|A|}$ \\
+    \textbf{Theorem 6.2.1 Some Subset Relations (Property of Sets)} \\
+    \begin{enumerate}
+        \item Inclusion of Intersection: For all sets A and B \\
+              (a)$A \cap B \subseteq A$ (b) $A \cap B \subseteq B$
+        \item Inclusion in Union: For all sets A and B \\
+              (a)$A \subseteq A \cup B$ (b)$B \subseteq A \cup B$
+        \item Transitive Property of Subsets: For all sets A, B and C \\
+              $A \subseteq B \land B \subseteq C \rightarrow A \subseteq C$
+    \end{enumerate}
+    \begin{mdframed}
+        \section{6. Relations}
+    \end{mdframed}
+    \subsection{Relations}
+    \textbf{Defintion 6.1.1 (Relation $R$):} \\
+    $x R y \leftrightarrow (x, y) \in R$ \\
+    \textit{* $R \subseteq A \times B$} \\
+    \textbf{Domain $Dom(R)$:} $\{ a \in A : a R b \; \exists b \in B\}$ \\
+    \textbf{Co-Domain $coDom(R)$:} set $B$ \\
+    \textbf{Range $Range(R)$:} $\{ b \in B : a R b \; \exists a \in A\}$ \\
+    \textbf{Definition 6.1.2 (Inverse of a Relation $R^{-1}$):} \\
+    Given R from A to B. Inverse: \\
+    $R^{-1} = \{(y,x) \in B \times A : (x, y) \in R \}$ \\
+    \textbf{Definition 6.1.4 (Composition of Relations):} \\
+    Given sets A, B and C. $R \subseteq A \times B$ $S \subseteq B \times C$: \\
+    $\forall x \in A, \forall x \in C (x S \circ R z \leftrightarrow (\exists \in B (x R y \land y R z)))$ \\
+    \textit{* 2nd relation first} \\
+    \textbf{Proposition: Composition is Associative:} \\
+    $T \circ (S \circ R) = (T \circ S) \circ R = T \circ S \circ R$ \\
+    \textbf{Proposition: Inverse of Composition} \\
+    $(S \circ R)^{-1} = R^{-1} \circ S^{-1}$ \\
+    \textbf{Definition: (Relexivity, Symmetry, Transitivity):} \\
+    \begin{enumerate}
+        \item Reflexive: $R$ is reflexive $\leftrightarrow \forall x \in A (x R X)$
+        \item Symmetric: $R$ is Symmetric $\leftrightarrow \forall x, y \in A (x R y \rightarrow y R x)$
+        \item Transitive: $R$ is Transitive $\leftrightarrow \forall x, y, z \in A (x R y \land y R x \rightarrow x R z)$
+    \end{enumerate}
+    \textbf{Transitive Closure} \\
+    $R^t$ is a transitive closure when it adds least no. of ordered pairs to ensure transitivity: \\
+    \begin{enumerate}
+        \item $R^t$ is transitive
+        \item $R \subseteq R^t$
+        \item If $S$ is another transitive relation, $R^t \subseteq S$
+    \end{enumerate}
 
-
+    \subsection{Equivalence Relation}
+    \textbf{Definition (Partition $\mathscr{C}$):} \\
+    $\mathscr{C}$ is a partition of set A if the following holds:
+    \begin{enumerate}
+        \item $\forall S \in \mathscr{C}, (\emptyset \neq S \land S \subseteq A)$ \\
+              \textit{* $S$ is a subset of $A$}
+        \item $\forall x \in A \; \exists S \in \mathscr{C} (x \in S) \land
+                  \forall x \; \exists S_1, S_2 \in \mathscr{C} (x \in S_1 \land x \in S_2 \rightarrow S_1 = S_2)$ \\
+              \textit{* Every element in A is in exactly one element of $\mathscr{C}$}
+        \item Shorter Ver.: $\forall x \in A \exists! S \in \mathscr{C} (x \in S)$
+    \end{enumerate}
+    \textbf{Theorem 8.3.1 (Relation Induced by a Partition):} \\
+    R induced by partition is reflexive, symmetric and transitives \\
+    \textit{* same component as relation} \\
+    \textbf{Definition 6.3.2 (Equivalence Relation $\sim$):} \\
+    $R$ is an equiv relation $\leftrightarrow$ R is reflexive, symmetric, transitive \\
+    \textit{* Prove by each cases of reflexive, symmetric, transitive} \\
+    \textbf{Definition 6.3.3 (Equivalence Class $[a]_\sim$):} \\
+    $[a]_\sim = \{ x \in A : a \sim x \}$ \\
+    \textit{* The set consisting of elements related to a} \\
+    $\forall a \in A (x \in [a]_\sim \leftrightarrow a \sim x)$ \\
+    \textbf{Lemma Rel.1 Equivalence Class} \\
+    $x \sim y \equiv [x] = [y] \equiv [x] \cap [y] \neq \emptyset$ \\
+    \textbf{Definition 6.3.5 (Set of Equivalent Classes):} \\
+    $A /\sim = \{ [x]_\sim : x \in A \}$ \\
+    \textit{* set of all equivalence classes} \\
+    \textbf{Theorem 8.3.4 (Partiton Induced By Equiv Relation):} \\
+    Partition formed by distinct equivalence classes formed by R on set A \\
+    \textbf{Theorem Rel.2 ($A /\sim$ is a partition of $A$):} \\
+    Partition formed by distinct equivalence classes formed by R on set A \\
+    \textbf{Proposition ${\sim}_n$: } Congruence-mod $n$ is an equivalence relation on $\mathbb{Z}$ for every $n \in \mathbb{Z}^+$ \\
+    \textit{* Partition into {Theorem 4.4.1 Quotient-Remainder Theorem}} \\
+    \subsection{Partial Order Relations}
+    \textbf{Definition 3.4.1 (Antisymmetry):} \\
+    $R$ is antisymmetric $\leftrightarrow \forall x,y \in A (x R y \land y R x \rightarrow x = y)$ \\
+    \textbf{Defintion 6.4.2 (Partial Order Relation $\preceq$)} \\
+    $R$ is a partial order relation $\leftrightarrow$ R is reflexive, antisymmetric, transitive \textit{* e.g $(\leq / \subseteq)$} \\
+    \textbf{Defintion (Partial Order Set $(A, R)$):} \\
+    Given partial order relation $R$ on set $A$, $A$ is the poset \\
+    \textit{* divides relation is partial order} \\
+    \textbf{Hasse Diagram} \\
+    \includegraphics[width=\linewidth]{hasse_diagram}
+    \textbf{Definition Comparability:} \\
+    $\forall a, b \in A$ ($a, b$ comparable $\leftrightarrow a \leq b \lor b \leq a$) \\
+    \textit{* noncomparable is the opposite}
+    \textbf{Definition 6.4.5 (Maximal/Minimal/Largest/Smallest):} \\
+    Given a poset $(A, R)$: \\
+    \begin{enumerate}
+        \item c is maximal: $\forall x \in A (c \preceq x \rightarrow c = x)$
+        \item c is minimal: $\forall x \in A (x \preceq c \rightarrow c = c)$
+        \item c is largest / greatest: $\forall x \in A (x \preceq c)$
+        \item c is smallest / least: $\forall x \in A (c \preceq x)$
+    \end{enumerate}
+    \textbf{Proposition:} Any smallest element is minimal (largest is maximal) \\
+    \textbf{Definition (Total Order Relation):} \\
+    $R$ is a partial order $\land \; \forall x,y \in A (x R y \lor y R x)$ \\
+    \textbf{Definition (Linearization):} \\
+    $\forall x, y \in A (x \preceq y \rightarrow x \preceq^* y)$ \\
+    \textit{* deriving one total order from partial order} \\
+    \textbf{Kahn's Algorithm:} \\
+    \begin{enumerate}
+        \item Set $A_0$ := A and $i := 0$
+        \item Repeat until $A_i = \emptyset$
+              \begin{enumerate}
+                  \item find a minimal element $c_i \in A_i$ w.r.t $\preceq$
+                  \item $A_{i+1} = A_i \setminus \{c_i\}$
+                  \item $i := i + 1$
+              \end{enumerate}
+        \item Output: Linearization of partial order
+    \end{enumerate}
+    \textbf{Definition (Well-Ordered Set):} \\
+    $\forall S \in \mathcal{P}(A), S \neq \emptyset \rightarrow (\exists x \in S \;\forall y \in S (x \preceq y)))$ \\
+    \textit{* must be a total order relation}
     \newpage
     \begin{mdframed}
         \section{Proven, Theorems etc.}
@@ -294,11 +425,37 @@
     Product of two consecutive odd numbers is always odd \\
     The product of two irrational numbers is not always irrational \\
     Difference of two consecutive squares is always odd \\
-    Theorem 4.7.1: $\sqrt{2}$ is irrational\\
-    Proposition 4.6.4: For all integers $n$, if $n^2$ is even then $n$ is even \\
+    \textbf{Theorem 4.7.1}: $\sqrt{2}$ is irrational\\
+    \textbf{Proposition 4.6.4}: For all integers $n$, if $n^2$ is even then $n$ is even \\
+    \textbf{Theorem 4.4.1 (The Quotient-Remainder Theorem)} \\
+    For any integer n and positive integer d, there is a unique q and r such that:\\
+    $n = dq + r \; | \; (0 \leq r < d)$ \\
+    \textbf{Theorem 4.3.3 Transitivity of Divisibility}\\
     \subsection{Quantifiers}
-    Theorem 3.2.1 Negation of Universal Statement
+    \textbf{Theorem 3.2.1 Negation of a Universal Statement}: "$\sim (\forall x \in D, P(x)) \equiv \exists x \in D, \sim P(x)$" \\
+    \textbf{Theorem 3.2.2 Negation of a Existential Statement}: "$\sim (\exists x \in D, P(x)) \equiv \forall x \in D, \sim P(x) $" \\
+    \subsection{Set Theory}
+    \textbf{Theorem 6.2.4 (Empty set subset of every set)} \\
+    $\emptyset \subseteq A$ (A is any set) \\
+    \textbf{Theorem 6.3.1 (Power Set No. of Elements)} \\
+    $|\mathcal{P}(A)| = 2^{|A|}$ \\
+    \textbf{Theorem 6.2.1 Some Subset Relations (Property of Sets)} \\
+    \begin{enumerate}
+        \item Inclusion of Intersection: For all sets A and B \\
+              (a)$A \cap B \subseteq A$ (b) $A \cap B \subseteq B$
+        \item Inclusion in Union: For all sets A and B \\
+              (a)$A \subseteq A \cup B$ (b)$B \subseteq A \cup B$
+        \item Transitive Property of Subsets: For all sets A, B and C \\
+              $A \subseteq B \land B \subseteq C \rightarrow A \subseteq C$
+    \end{enumerate}
 
+
+
+
+
+
+
+    \newpage
     \begin{itemize}
         \item \textbf{Byte:} 8-bits
         \item \textbf{Nibble:} 4-bits
