@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1678175672 "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" "cs1231s_midterms_cheatsheet..pdf" "cs1231s_midterms_cheatsheet." 1678175672
+["pdflatex"] 1678177931 "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" "cs1231s_midterms_cheatsheet..pdf" "cs1231s_midterms_cheatsheet." 1678177932
   "/etc/texmf/web2c/texmf.cnf" 1676620147 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" 1678175672 24020 75411366174f53dee4fbb7ebc4c6290a ""
+  "/home/jmsandiego/nus_cs_cheatsheets/cs1231s/cs1231s_midterms_cheatsheet..tex" 1678177931 26277 a4af97243e8cff070ead4267d758a7b7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -118,9 +118,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1676620173 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1676620208 2802181 b5a980c60acdf305ce58c253d15bf8a6 ""
-  "cs1231s_midterms_cheatsheet..aux" 1678175672 3279 df69669500b698b33d06be046d1e289c "pdflatex"
-  "cs1231s_midterms_cheatsheet..out" 1678175672 3393 2f450bb98a382e033fd3cdb75b5d2941 "pdflatex"
-  "cs1231s_midterms_cheatsheet..tex" 1678175672 24020 75411366174f53dee4fbb7ebc4c6290a ""
+  "cs1231s_midterms_cheatsheet..aux" 1678177931 3492 ab92a845c3456a8f61a68812c835952c "pdflatex"
+  "cs1231s_midterms_cheatsheet..out" 1678177931 3711 b895335a84be7b6ba3cf1885d5cd3ca1 "pdflatex"
+  "cs1231s_midterms_cheatsheet..tex" 1678177931 26277 a4af97243e8cff070ead4267d758a7b7 ""
   "images//hasse_diagram.jpg" 1678168478 19996 69c84f381ef5398fb69a699450482bd7 ""
   (generated)
   "cs1231s_midterms_cheatsheet..aux"

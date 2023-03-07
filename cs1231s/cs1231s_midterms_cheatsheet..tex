@@ -256,7 +256,31 @@
         \item Converse: "$\forall x \in D (Q(x) \rightarrow P(x))$"
         \item Inverse: "$\forall x \in D (\sim P(x) \rightarrow \sim Q(x))$"
     \end{enumerate}
-
+    \textbf{Definition 3.2.2 (Sufficient / necessary, Only if)}: \\
+    \begin{enumerate}
+        \item \textbf{Sufficient}: "$\forall x (r(x) \rightarrow s(x))$" r(x) is sufficient condition for s(x)
+        \item \textbf{Necessary}: "$\forall x (\sim r(x) \rightarrow \sim s(x))$" r(x) is a necessary condition for s(x)
+        \item \textbf{Only if}: "$\forall x (\sim s(x) \rightarrow \sim r(x))$" r(x) only if s(x)
+    \end{enumerate}
+    \subsection{Rules of Inference Quantifiers}
+    \textbf{Universal Modus Ponens} \\
+    \begin{align}
+        \forall x (P(x) \rightarrow Q(x)) \tag{premise} \\
+        P(a)  \tag{for particular a | premise}          \\
+        \bullet \hspace{0.3cm} Q(a) \tag{conclusion}
+    \end{align}
+    \textbf{Universal Modus Tollens} \\
+    \begin{align}
+        \forall x (P(x) \rightarrow Q(x)) \tag{premise} \\
+        \sim Q(a)  \tag{for particular a | premise}     \\
+        \bullet \hspace{0.3cm} \sim P(a) \tag{conclusion}
+    \end{align}
+    \textbf{Universal Transitivity} \\
+    \begin{align}
+        \forall x (P(x) \rightarrow Q(x)) \tag{premise} \\
+        \forall x (Q(x) \rightarrow R(x)) \tag{premise} \\
+        \bullet \hspace{0.3cm} \forall x (P(x) \rightarrow R(x)) \tag{conclusion}
+    \end{align}
     \begin{mdframed}
         \section{5. Set Theory}
     \end{mdframed}
@@ -463,6 +487,21 @@
         \item Transitive Property of Subsets: For all sets A, B and C \\
               $A \subseteq B \land B \subseteq C \rightarrow A \subseteq C$
     \end{enumerate}
+    \subsection{Relations}
+    \textbf{Proposition: Composition is Associative:} \\
+    $T \circ (S \circ R) = (T \circ S) \circ R = T \circ S \circ R$ \\
+    \textbf{Proposition: Inverse of Composition} \\
+    $(S \circ R)^{-1} = R^{-1} \circ S^{-1}$ \\
+    \textbf{Theorem 8.3.1 (Relation Induced by a Partition):} \\
+    R induced by partition is reflexive, symmetric and transitives \\
+    \textbf{Lemma Rel.1 Equivalence Class} \\
+    $x \sim y \equiv [x] = [y] \equiv [x] \cap [y] \neq \emptyset$ \\
+    \textbf{Theorem 8.3.4 (Partiton Induced By Equiv Relation):} \\
+    Partition formed by distinct equivalence classes formed by R on set A \\
+    \textbf{Theorem Rel.2 ($A /\sim$ is a partition of $A$):} \\
+    Partition formed by distinct equivalence classes formed by R on set A \\
+    \textbf{Proposition ${\sim}_n$: } Congruence-mod $n$ is an equivalence relation on $\mathbb{Z}$ for every $n \in \mathbb{Z}^+$ \\
+    \textit{* Partition into {Theorem 4.4.1 Quotient-Remainder Theorem}} \\
 \end{multicols*}
 
 \end{document}
